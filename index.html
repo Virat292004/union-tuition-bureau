@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Union Tuition Bureau provides qualified home tutors in Varanasi for Classes 1 to 12, CBSE and UP Board."
+    />
+    <title>Union Tuition Bureau | Home Tutors in Varanasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Union Tuition Bureau home">
+          <span class="brand-mark">U</span>
+          <span>
+            <strong>Union Tuition Bureau</strong>
+            <small>Home Tutors in Varanasi</small>
+          </span>
+        </a>
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#subjects">Subjects</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Find a Tutor</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Trusted Home Tuition in Varanasi</p>
+            <h1>The right teacher can make learning feel <span>simple.</span></h1>
+            <p class="hero-text">
+              Qualified home tutors for students from Class 1 to Class 12. Personal attention,
+              better understanding, and steady progress at your doorstep.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary form-jump" data-form="student" href="#contact">Find a Home Tutor</a>
+              <a class="button teacher-cta form-jump" data-form="teacher" href="#contact">Apply for Tutor Jobs</a>
+              <a class="button secondary phone-link" href="#contact">Call Us Today</a>
+            </div>
+            <div class="trust-row">
+              <div><strong>1-12</strong><span>All Classes</span></div>
+              <div><strong>2</strong><span>Boards Covered</span></div>
+              <div><strong>1:1</strong><span>Personal Tuition</span></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Teacher helping a student study at home">
+            <img src="assets/teacher-student-home-tuition.png" alt="Teacher helping a student study at home" />
+            <div class="availability-card">
+              <span class="pulse"></span>
+              <div>
+                <strong>Tutors Available</strong>
+                <small>Across Varanasi</small>
+              </div>
+            </div>
+            <div class="subject-card">
+              <strong>CBSE &amp; UP Board</strong>
+              <span>All major subjects</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Highlights">
+        <div class="container strip-grid">
+          <p><span>01</span> Verified teachers</p>
+          <p><span>02</span> Personalized lessons</p>
+          <p><span>03</span> Flexible timings</p>
+          <p><span>04</span> Varanasi-based tutors</p>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">What We Offer</p>
+            <h2>Learning support that fits your child</h2>
+            <p>From everyday homework to exam preparation, find a tutor suited to your academic needs.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card accent-card">
+              <span class="card-number">01</span>
+              <div class="service-icon">⌂</div>
+              <h3>Home Tuition</h3>
+              <p>One-to-one learning sessions at home with personal attention and flexible timings.</p>
+            </article>
+            <article class="service-card">
+              <span class="card-number">02</span>
+              <div class="service-icon">✦</div>
+              <h3>All Classes</h3>
+              <p>Academic guidance for students from primary school to senior secondary level.</p>
+            </article>
+            <article class="service-card">
+              <span class="card-number">03</span>
+              <div class="service-icon">✓</div>
+              <h3>Both Boards</h3>
+              <p>Experienced teachers familiar with CBSE and UP Board curriculum requirements.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section subject-section" id="subjects">
+        <div class="container subject-layout">
+          <div>
+            <p class="eyebrow">Subjects &amp; Classes</p>
+            <h2>Guidance for every stage of learning</h2>
+            <p class="section-intro">
+              Select a class group to see the most requested tutoring subjects. We can also help
+              arrange teachers for specific academic needs.
+            </p>
+            <div class="class-tabs" role="tablist" aria-label="Class groups">
+              <button class="class-tab active" data-level="primary" role="tab">Classes 1-5</button>
+              <button class="class-tab" data-level="middle" role="tab">Classes 6-8</button>
+              <button class="class-tab" data-level="secondary" role="tab">Classes 9-10</button>
+              <button class="class-tab" data-level="science" role="tab">11-12 Science</button>
+              <button class="class-tab" data-level="commerce" role="tab">11-12 Commerce</button>
+              <button class="class-tab" data-level="arts" role="tab">11-12 Arts</button>
+            </div>
+          </div>
+          <div class="subject-panel">
+            <p class="panel-label" id="subject-label">Classes 1-5</p>
+            <div class="subject-list" id="subject-list"></div>
+            <a href="#contact" class="text-link">Request a tutor <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img src="assets/teacher-student-home-tuition.png" alt="Personal home tuition in Varanasi" />
+          </div>
+          <div>
+            <p class="eyebrow">About Union Tuition Bureau</p>
+            <h2>A dependable local connection between students and teachers</h2>
+            <p>
+              Union Tuition Bureau helps families in Varanasi find suitable and experienced home tutors.
+              Our focus is simple: match every student with a teacher who can understand their learning
+              needs and help them build confidence.
+            </p>
+            <ul class="check-list">
+              <li>Home tutors across Varanasi</li>
+              <li>Support for CBSE and UP Board</li>
+              <li>Teachers for all major subjects</li>
+              <li>Personalized one-to-one learning</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section steps">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">Simple Process</p>
+            <h2>Find your tutor in three easy steps</h2>
+          </div>
+          <div class="step-grid">
+            <article><span>01</span><h3>Share Your Need</h3><p>Tell us the class, board, subject, and your Varanasi locality.</p></article>
+            <article><span>02</span><h3>Get a Tutor Match</h3><p>We connect you with a suitable teacher based on your requirements.</p></article>
+            <article><span>03</span><h3>Start Learning</h3><p>Begin focused home tuition with personal academic support.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Enquire Today</p>
+            <h2>Students and teachers, connect with us</h2>
+            <p>
+              Parents can request a suitable home tutor. Teachers can also apply for tutoring
+              opportunities in Varanasi.
+            </p>
+            <div class="contact-details">
+              <a class="phone-link" href="#contact"><span>☎</span><div><small>Call us</small><strong class="phone-text">Add phone number</strong></div></a>
+              <a class="email-link" href="#contact"><span>✉</span><div><small>Email us</small><strong class="email-text">Add email address</strong></div></a>
+              <div><span>⌖</span><div><small>Service area</small><strong>Varanasi, Uttar Pradesh</strong></div></div>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="form-switch" role="tablist" aria-label="Select enquiry type">
+              <button class="form-switch-button active" type="button" data-form="student" role="tab">Need a Tutor</button>
+              <button class="form-switch-button" type="button" data-form="teacher" role="tab">Apply as a Teacher</button>
+            </div>
+          <form class="enquiry-form active" id="enquiry-form">
+            <div class="form-heading">
+              <h3>Request a Home Tutor</h3>
+              <p>Send your requirements in less than a minute.</p>
+            </div>
+            <label>
+              Parent / Student Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <div class="form-row">
+              <label>
+                Phone Number
+                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </label>
+              <label>
+                Locality
+                <input type="text" name="locality" placeholder="Area in Varanasi" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Class
+                <select name="studentClass" required>
+                  <option value="">Select class</option>
+                  <option>Class 1</option><option>Class 2</option><option>Class 3</option>
+                  <option>Class 4</option><option>Class 5</option><option>Class 6</option>
+                  <option>Class 7</option><option>Class 8</option><option>Class 9</option>
+                  <option>Class 10</option><option>Class 11</option><option>Class 12</option>
+                </select>
+              </label>
+              <label>
+                Board
+                <select name="board" required>
+                  <option value="">Select board</option>
+                  <option>CBSE Board</option>
+                  <option>UP Board</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Subject Requirement
+              <input type="text" name="subject" placeholder="Example: Maths and Science" required />
+            </label>
+            <button class="button primary full-width" type="submit">Send Enquiry on WhatsApp</button>
+            <p class="form-note" id="form-note">WhatsApp will open with your enquiry details.</p>
+          </form>
+          <form class="enquiry-form" id="teacher-form">
+            <div class="form-heading">
+              <h3>Teacher Registration</h3>
+              <p>Apply for home tuition opportunities in Varanasi.</p>
+            </div>
+            <label>
+              Teacher Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <div class="form-row">
+              <label>
+                Phone Number
+                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </label>
+              <label>
+                Locality
+                <input type="text" name="locality" placeholder="Area in Varanasi" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Qualification
+                <input type="text" name="qualification" placeholder="Example: B.Sc, B.Ed" required />
+              </label>
+              <label>
+                Experience
+                <input type="text" name="experience" placeholder="Example: 3 years" required />
+              </label>
+            </div>
+            <label>
+              Classes You Can Teach
+              <select name="classes" required>
+                <option value="">Select class group</option>
+                <option>Classes 1-5</option>
+                <option>Classes 6-8</option>
+                <option>Classes 9-10</option>
+                <option>Classes 11-12 - Science</option>
+                <option>Classes 11-12 - Commerce</option>
+                <option>Classes 11-12 - Arts</option>
+                <option>Multiple class groups</option>
+              </select>
+            </label>
+            <label>
+              Subjects You Can Teach
+              <input type="text" name="subjects" placeholder="Example: Maths, Science, English" required />
+            </label>
+            <button class="button teacher-button full-width" type="submit">Apply on WhatsApp</button>
+            <p class="form-note" id="teacher-form-note">WhatsApp will open with your application details.</p>
+          </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">U</span>
+            <span><strong>Union Tuition Bureau</strong><small>Home Tutors in Varanasi</small></span>
+          </a>
+          <p>Qualified teachers. Personal attention. Better learning.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#services">Services</a>
+          <a href="#subjects">Subjects</a>
+          <a href="#about">About Us</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a class="phone-link phone-text" href="#contact">Add phone number</a>
+          <a class="email-link email-text" href="#contact">Add email address</a>
+          <p>Varanasi, Uttar Pradesh</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">© <span id="year"></span> Union Tuition Bureau. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp whatsapp-link" href="#contact" aria-label="Contact on WhatsApp">
+      <span>☏</span>
+      <small>WhatsApp</small>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

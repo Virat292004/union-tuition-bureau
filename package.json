@@ -1,0 +1,12 @@
+{
+  "name": "union-tuition-bureau",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Union Tuition Bureau website and admin dashboard",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
