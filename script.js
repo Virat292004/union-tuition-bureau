@@ -109,39 +109,13 @@ nav.querySelectorAll("a").forEach((link) => {
     menuToggle.setAttribute("aria-expanded", "false");
   });
 });
-
-const saveSubmission = async (payload) => {
-  const response = await fetch("/api/submissions", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-  if (!response.ok) {
-    const result = await response.json().catch(() => ({}));
-    throw new Error(result.error || "Unable to save your details. Please try again.");
-  }
-};
-
-document.querySelector("#enquiry-form").addEventListener("submit", async (event) => {
+document.querySelector("#enquiry-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  const note = document.querySelector("#form-note");
-  const data = Object.fromEntries(new FormData(event.currentTarget));
-  note.classList.remove("error");
-  note.textContent = "Saving your enquiry...";
-  try {
-    await saveSubmission({ type: "student", ...data });
-  } catch (error) {
-    note.textContent = error.message;
-    note.classList.add("error");
-    return;
-  }
 
-  note.textContent = whatsappNumber
-    ? "Enquiry saved. Opening WhatsApp for quick follow-up..."
-    : "Enquiry saved successfully. We will contact you soon.";
+  const data = Object.fromEntries(new FormData(event.currentTarget));
+
   const message = [
-    "Hello Union Tuition Bureau,",
-    "I am looking for a home tutor in Varanasi.",
+    "📚 NEW STUDENT ENQUIRY",
     "",
     `Name: ${data.name}`,
     `Phone: ${data.phone}`,
@@ -149,32 +123,25 @@ document.querySelector("#enquiry-form").addEventListener("submit", async (event)
     `Class: ${data.studentClass}`,
     `Board: ${data.board}`,
     `Subject: ${data.subject}`,
+    "",
+    "Sent from Union Tuition Bureau Website"
   ].join("\n");
 
-  if (whatsappNumber) window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+  window.open(
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+
   event.currentTarget.reset();
 });
 
-document.querySelector("#teacher-form").addEventListener("submit", async (event) => {
+document.querySelector("#teacher-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  const note = document.querySelector("#teacher-form-note");
-  const data = Object.fromEntries(new FormData(event.currentTarget));
-  note.classList.remove("error");
-  note.textContent = "Saving your application...";
-  try {
-    await saveSubmission({ type: "teacher", ...data });
-  } catch (error) {
-    note.textContent = error.message;
-    note.classList.add("error");
-    return;
-  }
 
-  note.textContent = whatsappNumber
-    ? "Application saved. Opening WhatsApp for quick follow-up..."
-    : "Application saved successfully. We will contact you soon.";
+  const data = Object.fromEntries(new FormData(event.currentTarget));
+
   const message = [
-    "Hello Union Tuition Bureau,",
-    "I would like to apply for home tuition opportunities in Varanasi.",
+    "👨‍🏫 NEW TEACHER APPLICATION",
     "",
     `Teacher Name: ${data.name}`,
     `Phone: ${data.phone}`,
@@ -183,9 +150,15 @@ document.querySelector("#teacher-form").addEventListener("submit", async (event)
     `Experience: ${data.experience}`,
     `Classes: ${data.classes}`,
     `Subjects: ${data.subjects}`,
+    "",
+    "Sent from Union Tuition Bureau Website"
   ].join("\n");
 
-  if (whatsappNumber) window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+  window.open(
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+
   event.currentTarget.reset();
 });
 
